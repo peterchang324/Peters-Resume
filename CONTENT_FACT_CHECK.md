@@ -1,6 +1,6 @@
 # Content fact-check register
 
-Last reviewed: 2026-08-08. Status values: `confirmed`, `needs confirmation`,
+Last reviewed: 2026-11-08. Status values: `confirmed`, `needs confirmation`,
 `private`, `remove`.
 
 ## Identity and contact
@@ -46,6 +46,7 @@ Last reviewed: 2026-08-08. Status values: `confirmed`, `needs confirmation`,
 | InvestIQ | confirmed / in development | GitHub `changfanghan0324/investiq`; live `investiq-eight-xi.vercel.app`. |
 | Northstar Credit Platform | confirmed / in development | GitHub `changfanghan0324/northstar-credit-platform`; no live demo supplied. |
 | Corporate Finance & FP&A Decision Platform | confirmed / roadmap | Planned scope only; no repository or live artifact claimed. |
+| Health vs. Price (BA780 class project) | confirmed / completed team class project | GitHub `peterchang324/BA780-Health-vs-Price`; findings, methods, and limitations taken from the repository README and notebook (checked November 8, 2026). Individual contribution within Team B02 is not itemized. |
 
 ## Skills policy
 

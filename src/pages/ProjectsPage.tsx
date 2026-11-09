@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import { copy, pathFor, useI18n } from '../content/language'
 import { experiences, projectMeta } from '../content/portfolio'
 
-const projectSlugs = ['tutor-platform', 'investment-growth-calculator', 'investiq', 'northstar-credit-platform', 'corporate-finance-fpa-platform']
+const projectSlugs = ['tutor-platform', 'investment-growth-calculator', 'investiq', 'northstar-credit-platform', 'corporate-finance-fpa-platform', 'ba780-health-vs-price']
 const statusIcon = { completed: CircleCheck, 'in-development': Sparkles, roadmap: Clock3 } as const
 
 export default function ProjectsPage() {
