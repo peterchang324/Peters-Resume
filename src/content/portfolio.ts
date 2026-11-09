@@ -246,6 +246,22 @@ export const experiences: Experience[] = [
     credentials: ['Incoming M.S. Business Analytics Student', 'Expected January 2028'],
     scene: 'assets/scenes/bu.webp',
   },
+  {
+    slug: 'ba780-health-vs-price', year: 'FALL 2026', category: 'project',
+    title: { en: 'Health vs. Price: Smart Grocery Shopping', zh: 'Health vs. Price：聰明的雜貨採購' },
+    role: { en: 'Team Member · BA780 Cohort B, Team 2 (B02)', zh: '團隊成員 · BA780 Cohort B 第 2 組（B02）' },
+    place: { en: 'Boston University · Questrom School of Business', zh: 'Boston University · Questrom School of Business' },
+    period: { en: 'Fall 2026 · MSBA class project', zh: '2026 年秋季 · MSBA 課程專案' },
+    summary: { en: 'A BA780 Python class project using open product and price data to ask whether shoppers can choose healthier packaged food without paying more.', zh: 'BA780 Python 課程專案，運用公開產品與價格資料，探討消費者能否在不多花錢的情況下選擇更健康的包裝食品。' },
+    challenge: { en: 'Compare packaged foods by nutrition, processing level, environmental score, brand, and store price using incomplete, crowd-sourced data.', zh: '以不完整的群眾外包資料，從營養、加工程度、環境分數、品牌與商店價格比較包裝食品。' },
+    built: { en: 'A team Python notebook and report that join Open Food Facts product records with Open Prices store observations by barcode, clean and normalize the data, and compare price per 100 g within food groups across five shopper-focused themes.', zh: '團隊以 Python notebook 與報告，依條碼串接 Open Food Facts 產品資料與 Open Prices 商店價格，清理並標準化資料，並在同一食品類別內依五個消費者主題比較每 100 公克價格。' },
+    outcome: { en: 'In the observed sample, Nutri-Score A/B products cost about 17% less per 100 g than D/E products within food groups, store brands cost about 42% less than national brands, and the median cross-store price gap for the same barcode was about 14%. These are descriptive associations, not causal estimates.', zh: '在觀察樣本中，同一食品類別內 Nutri-Score A/B 產品每 100 公克約比 D/E 便宜 17%，自有品牌約比全國品牌便宜 42%，同一條碼在不同商店的價差中位數約為 14%。以上為描述性關聯，並非因果推論。' },
+    highlights: { en: ['Nutri-Score A/B ≈ 17% cheaper per 100 g than D/E', 'Store brands ≈ 42% cheaper than national brands', 'Median same-barcode store gap ≈ 14%', '5,752 products in the per-100-g analysis'], zh: ['Nutri-Score A/B 每 100 公克約比 D/E 便宜 17%', '自有品牌約比全國品牌便宜 42%', '同條碼跨店價差中位數約 14%', '每 100 公克分析涵蓋 5,752 項產品'] },
+    skills: ['Python', 'pandas', 'NumPy', 'SciPy', 'Matplotlib', 'seaborn', 'Data Cleaning', 'Data Joining', 'Exploratory Data Analysis', 'Statistical Testing', 'Fixed-effects Regression', 'Data Visualization', 'Google Colab', 'Team Collaboration'],
+    credentials: ['Boston University MSBA · BA780 class project', 'Team project · Cohort B, Team 2'],
+    scene: 'assets/scenes/bu.webp',
+    links: [{ label: 'GitHub', href: 'https://github.com/peterchang324/BA780-Health-vs-Price' }],
+  },
 ]
 
 export const profile = {
@@ -325,6 +341,17 @@ export const projectMeta: Record<string, ProjectMeta> = {
     limitations: { en: 'Roadmap only. No implementation, artifact, user, or outcome is claimed.', zh: '目前僅為規劃，不宣稱已有實作、成果檔案、使用者或結果。' },
     nextSteps: { en: 'Define the first driver model and confirm scope before implementation.', zh: '確認第一個 driver model 與範圍後再開始實作。' },
     artifacts: { en: 'Artifact coming after validation.', zh: '完成驗證後補上成果檔案。' },
+  },
+  'ba780-health-vs-price': {
+    status: 'completed', lastUpdated: { en: 'November 8, 2026 · repository activity', zh: '2026 年 11 月 8 日 · repository 活動' },
+    problem: { en: 'Can shoppers choose healthier packaged food without paying more, and where do price differences actually come from: aisle, brand, processing level, or store?', zh: '消費者能否在不多花錢的情況下選擇更健康的包裝食品？價格差異究竟來自食品類別、品牌、加工程度還是商店？' },
+    targetUser: { en: 'Budget-conscious grocery shoppers; produced for the Boston University MSBA BA780 course.', zh: '重視預算的雜貨消費者；為 Boston University MSBA BA780 課程製作。' },
+    methodology: { en: 'Matched about 988,000 product records and 39,700 price observations by normalized barcode; removed placeholders, implausible nutrients, duplicate tags, and out-of-range package sizes; converted USD regular prices to price per 100 g; compared within food groups using log price indexes, Spearman correlations, significance tests with false-discovery-rate adjustment, and a store-by-food-group fixed-effects regression for promotions.', zh: '以標準化條碼串接約 988,000 筆產品資料與 39,700 筆價格紀錄；移除佔位值、不合理營養數值、重複價格標籤與超出範圍的包裝尺寸；將美元原價轉為每 100 公克價格；在食品類別內以對數價格指數、Spearman 相關、經 false discovery rate 調整的顯著性檢定，以及商店×食品類別固定效果迴歸分析促銷。' },
+    technology: { en: 'Python, pandas, NumPy, SciPy, Matplotlib, seaborn, Google Colab; Open Food Facts and Open Prices data.', zh: 'Python、pandas、NumPy、SciPy、Matplotlib、seaborn、Google Colab；Open Food Facts 與 Open Prices 資料。' },
+    financialRelevance: { en: 'Applies price-per-unit normalization, within-segment comparison, brand and channel price dispersion, and careful separation of association from causation — the same discipline used in pricing and consumer analytics.', zh: '運用單位價格標準化、同區隔比較、品牌與通路價格離散分析，並謹慎區分關聯與因果，與定價及消費者分析所需的方法一致。' },
+    limitations: { en: 'Open Prices is crowd-sourced: about 85% of location-tagged observations were from California and about 93% came from one contributor. Only about 0.6% of the catalog qualified for the per-100-g analysis, and nutrition and environmental scores are often missing. Results describe this sample, not national grocery prices or individual shopper costs.', zh: 'Open Prices 為群眾外包資料：約 85% 有地點標記的紀錄來自加州，約 93% 由同一位貢獻者提交。僅約 0.6% 的產品目錄符合每 100 公克分析條件，且營養與環境分數常有缺漏。結果僅描述此樣本，不代表全美雜貨價格或個別消費者的花費。' },
+    nextSteps: { en: 'Completed class project; any extension would start with broader, less concentrated price coverage before drawing wider conclusions.', zh: '已完成的課程專案；若要延伸，會先取得更廣泛、較不集中的價格資料，再做更大範圍的結論。' },
+    artifacts: { en: 'Public GitHub repository with the analysis notebook and project report; source data are not stored in the repository.', zh: '公開 GitHub repository，包含分析 notebook 與專案報告；原始資料未存放於 repository。' },
   },
 }
 

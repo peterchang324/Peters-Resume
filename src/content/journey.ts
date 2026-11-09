@@ -65,6 +65,6 @@ export const journeyChapters: JourneyChapter[] = [
     role: { en: 'M.S. Business Analytics · Boston University', zh: '商業分析碩士 · Boston University' },
     summary: { en: 'Boston University is the next environment for deepening business analytics, financial modeling, forecasting, and data-driven decisions.', zh: 'Boston University 是深化商業分析、財務建模、預測與資料驅動決策的下一個環境。' },
     scene: 'assets/scenes/bu.webp',
-    experienceSlugs: ['boston-university'],
+    experienceSlugs: ['boston-university', 'ba780-health-vs-price'],
   },
 ]
